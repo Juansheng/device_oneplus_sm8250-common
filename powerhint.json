@@ -220,16 +220,6 @@
       "HoldFd": true
     },
     {
-      "Name": "PeltMult",
-      "Path": "/proc/sys/kernel/sched_pelt_multiplier",
-      "Values": [
-        "1",
-        "4"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
       "Name": "TAUClampBoost",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
@@ -309,16 +299,11 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "PeltMult",
-      "Duration": 0,
-      "Value": "4"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "TAUClampBoost",
       "Duration": 0,
       "Value": "28"
     },
+
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
@@ -366,12 +351,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 3000,
       "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "PeltMult",
-      "Duration": 3000,
-      "Value": "4"
     },
     {
       "PowerHint": "LAUNCH",
